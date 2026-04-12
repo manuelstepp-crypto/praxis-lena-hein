@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praxis Lena Hein – Fachärztliche Adipositas-Therapie Frankfurt</title>
-    <meta name="description" content="Fachärztliche Adipositas-Expertise in Frankfurt am Main. Dr. Lena Hein – nachhaltige Gewichtsreduktion durch medizinische Präzision.">
+    <title>Fachärztinpraxis Lena Hein – Adipositasmedizin Frankfurt</title>
+    <meta name="description" content="Fachärztinpraxis Lena Hein – Adipositasmedizin von Frau zu Frau. Fachärztin für Allgemeine Chirurgie & Adipositas-Expertin in Frankfurt am Main.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --cream: #FAF7F4;
-            --warm-white: #FFFDFB;
-            --sand: #F0EBE3;
-            --taupe: #C4B5A4;
-            --deep-taupe: #8C7B6B;
-            --charcoal: #2C2C2C;
-            --soft-black: #1A1A1A;
-            --accent: #3D6B5E;
-            --accent-light: #4A7D6E;
-            --accent-pale: #E8F0ED;
-            --text: #3A3A3A;
-            --text-light: #6B6B6B;
+            --cream: #E8E4DE;
+            --warm-white: #F2EFEA;
+            --sand: #DDD8D1;
+            --taupe: #C4BAB0;
+            --deep-taupe: #8C8279;
+            --charcoal: #3C3C3C;
+            --soft-black: #2C2C2C;
+            --accent: #6B5D52;
+            --accent-light: #7E6F63;
+            --accent-pale: #ECE8E3;
+            --text: #3C3C3C;
+            --text-light: #7A7470;
         }
 
         html { scroll-behavior: smooth; font-size: 16px; }
@@ -50,7 +50,7 @@
         }
 
         nav.scrolled {
-            background: rgba(250, 247, 244, 0.92);
+            background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             box-shadow: 0 1px 0 rgba(0,0,0,0.04);
@@ -66,15 +66,16 @@
         }
 
         .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            font-weight: 500;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-weight: 400;
             color: var(--soft-black);
             text-decoration: none;
-            letter-spacing: -0.02em;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
-        .logo span { color: var(--accent); }
+        .logo span { color: var(--soft-black); }
 
         .nav-links { display: flex; gap: 2.5rem; align-items: center; }
 
@@ -87,11 +88,11 @@
             transition: color 0.3s;
         }
 
-        .nav-links a:hover { color: var(--accent); }
+        .nav-links a:hover { color: var(--soft-black); }
 
         .nav-cta {
-            background: var(--accent) !important;
-            color: white !important;
+            background: var(--soft-black) !important;
+            color: var(--cream) !important;
             padding: 0.6rem 1.5rem;
             border-radius: 100px;
             font-weight: 500 !important;
@@ -99,7 +100,7 @@
         }
 
         .nav-cta:hover {
-            background: var(--accent-light) !important;
+            background: var(--charcoal) !important;
             transform: translateY(-1px);
         }
 
@@ -137,7 +138,7 @@
             right: -20%;
             width: 70%;
             height: 140%;
-            background: radial-gradient(ellipse, rgba(61, 107, 94, 0.06) 0%, transparent 70%);
+            background: radial-gradient(ellipse, rgba(107, 93, 82, 0.04) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -157,8 +158,8 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: var(--accent-pale);
-            color: var(--accent);
+            background: var(--sand);
+            color: var(--deep-taupe);
             padding: 0.4rem 1rem;
             border-radius: 100px;
             font-size: 0.8rem;
@@ -171,23 +172,23 @@
             content: '';
             width: 6px;
             height: 6px;
-            background: var(--accent);
+            background: var(--taupe);
             border-radius: 50%;
         }
 
         .hero h1 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: clamp(2.5rem, 4.5vw, 3.8rem);
-            font-weight: 500;
+            font-weight: 400;
             line-height: 1.15;
             color: var(--soft-black);
             margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
+            letter-spacing: 0.01em;
         }
 
         .hero h1 em {
             font-style: italic;
-            color: var(--accent);
+            color: var(--deep-taupe);
         }
 
         .hero-text {
@@ -204,8 +205,8 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: var(--accent);
-            color: white;
+            background: var(--soft-black);
+            color: var(--cream);
             padding: 1rem 2rem;
             border-radius: 100px;
             text-decoration: none;
@@ -217,9 +218,9 @@
         }
 
         .btn-primary:hover {
-            background: var(--accent-light);
+            background: var(--charcoal);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(61, 107, 94, 0.25);
+            box-shadow: 0 8px 25px rgba(44, 44, 44, 0.15);
         }
 
         .btn-secondary {
@@ -236,7 +237,7 @@
             transition: color 0.3s;
         }
 
-        .btn-secondary:hover { color: var(--accent); }
+        .btn-secondary:hover { color: var(--soft-black); }
 
         .hero-image {
             position: relative;
@@ -279,7 +280,7 @@
             background: white;
             border-radius: 16px;
             padding: 1.2rem 1.5rem;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.06);
             display: flex;
             align-items: center;
             gap: 0.75rem;
@@ -288,7 +289,7 @@
         .float-icon {
             width: 44px;
             height: 44px;
-            background: var(--accent-pale);
+            background: var(--sand);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -314,17 +315,17 @@
             font-weight: 600;
             letter-spacing: 0.15em;
             text-transform: uppercase;
-            color: var(--accent);
+            color: var(--deep-taupe);
             margin-bottom: 1rem;
         }
 
         .section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: clamp(2rem, 3.5vw, 2.8rem);
-            font-weight: 500;
+            font-weight: 400;
             color: var(--soft-black);
             line-height: 1.2;
-            letter-spacing: -0.02em;
+            letter-spacing: 0.01em;
             margin-bottom: 1.25rem;
         }
 
@@ -354,14 +355,14 @@
         }
 
         .philosophy-quote {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.6rem;
             font-style: italic;
             color: var(--soft-black);
             line-height: 1.5;
             position: relative;
             padding-left: 1.5rem;
-            border-left: 3px solid var(--accent);
+            border-left: 2px solid var(--taupe);
         }
 
         .philosophy-stats {
@@ -379,10 +380,10 @@
         }
 
         .stat-number {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 2rem;
-            font-weight: 600;
-            color: var(--accent);
+            font-weight: 500;
+            color: var(--soft-black);
         }
 
         .stat-label {
@@ -420,8 +421,8 @@
 
         .service-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.06);
-            border-color: rgba(61, 107, 94, 0.15);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+            border-color: rgba(107, 93, 82, 0.12);
         }
 
         .service-icon {
@@ -433,11 +434,11 @@
             justify-content: center;
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            background: var(--accent-pale);
+            background: var(--sand);
         }
 
         .service-card h3 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.25rem;
             font-weight: 500;
             color: var(--soft-black);
@@ -454,10 +455,10 @@
             position: absolute;
             top: 1.5rem;
             right: 1.5rem;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 3rem;
             font-weight: 600;
-            color: rgba(61, 107, 94, 0.06);
+            color: rgba(107, 93, 82, 0.06);
             line-height: 1;
         }
 
@@ -497,8 +498,8 @@
         }
 
         .credential-tag {
-            background: var(--accent-pale);
-            color: var(--accent);
+            background: var(--sand);
+            color: var(--deep-taupe);
             padding: 0.5rem 1rem;
             border-radius: 100px;
             font-size: 0.8rem;
@@ -533,7 +534,7 @@
             width: 8px;
             height: 8px;
             min-width: 8px;
-            background: var(--accent);
+            background: var(--taupe);
             border-radius: 50%;
             margin-top: 0.5rem;
         }
@@ -555,17 +556,17 @@
         }
 
         .step-num {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 3.5rem;
-            font-weight: 600;
-            color: var(--accent);
-            opacity: 0.2;
+            font-weight: 400;
+            color: var(--taupe);
+            opacity: 0.5;
             line-height: 1;
             margin-bottom: 1.5rem;
         }
 
         .process-step h3 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.2rem;
             font-weight: 500;
             color: var(--soft-black);
@@ -590,17 +591,17 @@
 
         /* ── CTA ── */
         .cta-section {
-            background: var(--soft-black);
+            background: var(--accent-pale);
             padding: 6rem 2rem;
             text-align: center;
         }
 
-        .cta-section .section-label { color: var(--taupe); }
+        .cta-section .section-label { color: var(--deep-taupe); }
 
-        .cta-section .section-title { color: white; }
+        .cta-section .section-title { color: var(--soft-black); }
 
         .cta-section .section-subtitle {
-            color: rgba(255,255,255,0.6);
+            color: var(--text-light);
             margin: 0 auto 2.5rem;
         }
 
@@ -611,22 +612,23 @@
 
         .cta-contact {
             margin-top: 2rem;
-            color: rgba(255,255,255,0.4);
+            color: var(--text-light);
             font-size: 0.9rem;
         }
 
         .cta-contact a {
-            color: rgba(255,255,255,0.7);
+            color: var(--soft-black);
             text-decoration: none;
-            transition: color 0.3s;
+            border-bottom: 1px solid var(--taupe);
+            transition: border-color 0.3s;
         }
 
-        .cta-contact a:hover { color: white; }
+        .cta-contact a:hover { border-color: var(--soft-black); }
 
         /* ── Footer ── */
         footer {
-            background: var(--soft-black);
-            border-top: 1px solid rgba(255,255,255,0.06);
+            background: var(--sand);
+            border-top: 1px solid rgba(0,0,0,0.06);
             padding: 3rem 2rem;
         }
 
@@ -644,24 +646,24 @@
             font-weight: 600;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: rgba(255,255,255,0.3);
+            color: var(--deep-taupe);
             margin-bottom: 1rem;
         }
 
         .footer-col p, .footer-col a {
             font-size: 0.88rem;
-            color: rgba(255,255,255,0.5);
+            color: var(--text-light);
             line-height: 1.8;
             text-decoration: none;
         }
 
-        .footer-col a:hover { color: rgba(255,255,255,0.8); }
+        .footer-col a:hover { color: var(--soft-black); }
 
         .footer-bottom {
             max-width: 1200px;
             margin: 2rem auto 0;
             padding-top: 1.5rem;
-            border-top: 1px solid rgba(255,255,255,0.06);
+            border-top: 1px solid rgba(0,0,0,0.08);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -669,19 +671,19 @@
 
         .footer-bottom p {
             font-size: 0.8rem;
-            color: rgba(255,255,255,0.25);
+            color: var(--taupe);
         }
 
         .footer-legal { display: flex; gap: 1.5rem; }
 
         .footer-legal a {
             font-size: 0.8rem;
-            color: rgba(255,255,255,0.25);
+            color: var(--taupe);
             text-decoration: none;
             transition: color 0.3s;
         }
 
-        .footer-legal a:hover { color: rgba(255,255,255,0.5); }
+        .footer-legal a:hover { color: var(--soft-black); }
 
         /* ── Mobile Nav ── */
         .mobile-menu {
@@ -691,7 +693,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(250, 247, 244, 0.98);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             z-index: 99;
             flex-direction: column;
@@ -703,7 +705,7 @@
         .mobile-menu.active { display: flex; }
 
         .mobile-menu a {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.5rem;
             color: var(--soft-black);
             text-decoration: none;
@@ -769,7 +771,7 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-inner">
-            <a href="#" class="logo">Praxis <span>Lena Hein</span></a>
+            <a href="#" class="logo">Lena <span>Hein</span></a>
             <div class="nav-links">
                 <a href="#philosophie">Philosophie</a>
                 <a href="#leistungen">Leistungen</a>
@@ -797,8 +799,8 @@
     <section class="hero">
         <div class="hero-inner">
             <div class="hero-content">
-                <div class="hero-badge">Privatpraxis in Frankfurt</div>
-                <h1>Medizinische Lösung für <em>nachhaltige</em> Gewichtsreduktion</h1>
+                <div class="hero-badge">Fachärztinpraxis in Frankfurt</div>
+                <h1>Adipositasmedizin – <em>von Frau zu Frau</em></h1>
                 <p class="hero-text">Fachärztliche Adipositas-Expertise in der Mitte Frankfurts. Keine Diät – klare, evidenzbasierte Medizin für dauerhafte Ergebnisse.</p>
                 <div class="hero-actions">
                     <a href="mailto:info@praxislenahein.de" class="btn-primary">
@@ -884,8 +886,8 @@
     <section class="about" id="ueber-mich">
         <div class="section-inner">
             <span class="section-label fade-up">Ihre Ärztin</span>
-            <h2 class="section-title fade-up">Nathalena Hein</h2>
-            <p class="section-subtitle fade-up">Fachärztin für Allgemeine Chirurgie</p>
+            <h2 class="section-title fade-up">Lena Hein</h2>
+            <p class="section-subtitle fade-up">Fachärztin für Allgemeine Chirurgie · Adipositas-Expertin</p>
             <div class="about-grid">
                 <div class="about-image-area fade-up">
                     <div class="about-image-box">
