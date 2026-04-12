@@ -12,18 +12,18 @@
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --cream: #FAF7F4;
-            --warm-white: #FFFDFB;
-            --sand: #F0EBE3;
-            --taupe: #C4B5A4;
-            --deep-taupe: #8C7B6B;
-            --charcoal: #2C2C2C;
-            --soft-black: #1A1A1A;
-            --accent: #3D6B5E;
-            --accent-light: #4A7D6E;
-            --accent-pale: #E8F0ED;
-            --text: #3A3A3A;
-            --text-light: #6B6B6B;
+            --cream: #FDFCFA;
+            --warm-white: #FFFFFF;
+            --sand: #F5F1EC;
+            --taupe: #D0C4B6;
+            --deep-taupe: #9E9083;
+            --charcoal: #484848;
+            --soft-black: #2E2E2E;
+            --accent: #4A8575;
+            --accent-light: #5A9585;
+            --accent-pale: #EEF5F2;
+            --text: #484848;
+            --text-light: #7E7E7E;
         }
 
         html { scroll-behavior: smooth; font-size: 16px; }
@@ -50,7 +50,7 @@
         }
 
         nav.scrolled {
-            background: rgba(250, 247, 244, 0.92);
+            background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             box-shadow: 0 1px 0 rgba(0,0,0,0.04);
@@ -137,7 +137,7 @@
             right: -20%;
             width: 70%;
             height: 140%;
-            background: radial-gradient(ellipse, rgba(61, 107, 94, 0.06) 0%, transparent 70%);
+            background: radial-gradient(ellipse, rgba(74, 133, 117, 0.05) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -219,7 +219,7 @@
         .btn-primary:hover {
             background: var(--accent-light);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(61, 107, 94, 0.25);
+            box-shadow: 0 8px 25px rgba(74, 133, 117, 0.2);
         }
 
         .btn-secondary {
@@ -279,7 +279,7 @@
             background: white;
             border-radius: 16px;
             padding: 1.2rem 1.5rem;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.06);
             display: flex;
             align-items: center;
             gap: 0.75rem;
@@ -420,8 +420,8 @@
 
         .service-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.06);
-            border-color: rgba(61, 107, 94, 0.15);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+            border-color: rgba(74, 133, 117, 0.12);
         }
 
         .service-icon {
@@ -457,7 +457,7 @@
             font-family: 'Playfair Display', serif;
             font-size: 3rem;
             font-weight: 600;
-            color: rgba(61, 107, 94, 0.06);
+            color: rgba(74, 133, 117, 0.05);
             line-height: 1;
         }
 
@@ -590,17 +590,17 @@
 
         /* ── CTA ── */
         .cta-section {
-            background: var(--soft-black);
+            background: var(--accent-pale);
             padding: 6rem 2rem;
             text-align: center;
         }
 
-        .cta-section .section-label { color: var(--taupe); }
+        .cta-section .section-label { color: var(--accent); }
 
-        .cta-section .section-title { color: white; }
+        .cta-section .section-title { color: var(--soft-black); }
 
         .cta-section .section-subtitle {
-            color: rgba(255,255,255,0.6);
+            color: var(--text-light);
             margin: 0 auto 2.5rem;
         }
 
@@ -611,22 +611,22 @@
 
         .cta-contact {
             margin-top: 2rem;
-            color: rgba(255,255,255,0.4);
+            color: var(--text-light);
             font-size: 0.9rem;
         }
 
         .cta-contact a {
-            color: rgba(255,255,255,0.7);
+            color: var(--accent);
             text-decoration: none;
             transition: color 0.3s;
         }
 
-        .cta-contact a:hover { color: white; }
+        .cta-contact a:hover { color: var(--accent-light); }
 
         /* ── Footer ── */
         footer {
-            background: var(--soft-black);
-            border-top: 1px solid rgba(255,255,255,0.06);
+            background: var(--sand);
+            border-top: 1px solid rgba(0,0,0,0.06);
             padding: 3rem 2rem;
         }
 
@@ -644,24 +644,24 @@
             font-weight: 600;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: rgba(255,255,255,0.3);
+            color: var(--deep-taupe);
             margin-bottom: 1rem;
         }
 
         .footer-col p, .footer-col a {
             font-size: 0.88rem;
-            color: rgba(255,255,255,0.5);
+            color: var(--text-light);
             line-height: 1.8;
             text-decoration: none;
         }
 
-        .footer-col a:hover { color: rgba(255,255,255,0.8); }
+        .footer-col a:hover { color: var(--accent); }
 
         .footer-bottom {
             max-width: 1200px;
             margin: 2rem auto 0;
             padding-top: 1.5rem;
-            border-top: 1px solid rgba(255,255,255,0.06);
+            border-top: 1px solid rgba(0,0,0,0.08);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -669,19 +669,19 @@
 
         .footer-bottom p {
             font-size: 0.8rem;
-            color: rgba(255,255,255,0.25);
+            color: var(--taupe);
         }
 
         .footer-legal { display: flex; gap: 1.5rem; }
 
         .footer-legal a {
             font-size: 0.8rem;
-            color: rgba(255,255,255,0.25);
+            color: var(--taupe);
             text-decoration: none;
             transition: color 0.3s;
         }
 
-        .footer-legal a:hover { color: rgba(255,255,255,0.5); }
+        .footer-legal a:hover { color: var(--accent); }
 
         /* ── Mobile Nav ── */
         .mobile-menu {
@@ -691,7 +691,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(250, 247, 244, 0.98);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
             z-index: 99;
             flex-direction: column;
