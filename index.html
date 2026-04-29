@@ -714,6 +714,22 @@
             line-height: 1.8;
         }
 
+        .team-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+        }
+
+        .team-tag {
+            background: var(--accent-pale);
+            color: var(--deep-taupe);
+            padding: 0.3rem 0.85rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
         @media (max-width: 700px) {
             .team-grid { grid-template-columns: 1fr; }
         }
@@ -1113,9 +1129,15 @@
                         </div>
                     </div>
                     <div class="team-info">
-                        <p class="team-title">Fachärztin für Allgemeine Chirurgie</p>
-                        <h3 class="team-name">Dr. med. Lena Hein</h3>
-                        <p class="team-cv">Platzhaltertext für den Lebenslauf. Bitte hier den CV-Text einfügen: Ausbildung, Stationen, Schwerpunkte und persönliche Motivation.</p>
+                        <p class="team-title">Ernährungsberaterin</p>
+                        <h3 class="team-name">Claudia Jütten, BSc Oec.</h3>
+                        <p class="team-cv">Claudia Jütten begleitet unsere Patientinnen mit fundierter ernährungswissenschaftlicher Expertise. Als akkreditierte Fettstoffwechseltherapeutin (ADIF) und zertifizierte Ernährungstherapeutin für Essstörungen (FZE) verbindet sie medizinisches Fachwissen mit einem achtsamen, individuellen Beratungsansatz.</p>
+                        <div class="team-tags">
+                            <span class="team-tag">e.a.t. Ernährungsberatung Frankfurt</span>
+                            <span class="team-tag">Ernährungsberaterin VDOE</span>
+                            <span class="team-tag">Akkr. Fettstoffwechseltherapeutin (ADIF)</span>
+                            <span class="team-tag">Zert. Ernährungstherapeutin Essstörungen (FZE)</span>
+                        </div>
                     </div>
                 </div>
 
