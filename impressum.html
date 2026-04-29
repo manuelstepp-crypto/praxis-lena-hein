@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum – Privatpraxis Lena Hein</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --cream: #E8E4DE;
+            --warm-white: #F2EFEA;
+            --sand: #DDD8D1;
+            --taupe: #C4BAB0;
+            --deep-taupe: #8C8279;
+            --charcoal: #3C3C3C;
+            --soft-black: #2C2C2C;
+            --accent: #6B5D52;
+            --accent-pale: #ECE8E3;
+            --text: #3C3C3C;
+            --text-light: #7A7470;
+        }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--text);
+            background: var(--warm-white);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 1.25rem 2rem;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+        }
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-weight: 400;
+            color: var(--soft-black);
+            text-decoration: none;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .back-link {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover { color: var(--soft-black); }
+        .page-content {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 8rem 2rem 6rem;
+        }
+        .page-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--deep-taupe);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 400;
+            color: var(--soft-black);
+            margin-bottom: 3rem;
+            line-height: 1.2;
+        }
+        .section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--sand);
+        }
+        .section:last-child { border-bottom: none; }
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--soft-black);
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.9;
+            margin-bottom: 0.5rem;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--taupe);
+            transition: border-color 0.3s;
+        }
+        a:hover { border-color: var(--accent); }
+        footer {
+            background: var(--sand);
+            border-top: 1px solid rgba(0,0,0,0.06);
+            padding: 2rem;
+            text-align: center;
+        }
+        footer p { font-size: 0.8rem; color: var(--taupe); }
+        footer a { font-size: 0.8rem; color: var(--taupe); border-bottom: none; margin: 0 0.75rem; }
+        footer a:hover { color: var(--soft-black); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="logo">Lena <span>Hein</span></a>
+            <a href="/" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+                Zurück zur Startseite
+            </a>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <span class="page-label">Rechtliches</span>
+        <h1>Impressum</h1>
+
+        <div class="section">
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>Nathalena Hein</p>
+            <p>Privatpraxis Lena Hein</p>
+            <p>(in den Räumen der Praxis Fokus auf Psyche)</p>
+            <p>Große Friedberger Str. 44–46</p>
+            <p>60313 Frankfurt am Main</p>
+        </div>
+
+        <div class="section">
+            <h2>Kontakt</h2>
+            <p>E-Mail: <a href="mailto:info@praxislenahein.de">info@praxislenahein.de</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Gesetzliche Berufsbezeichnung</h2>
+            <p>Fachärztin für Allgemeine Chirurgie</p>
+            <p>(verliehen in der Bundesrepublik Deutschland)</p>
+        </div>
+
+        <div class="section">
+            <h2>Zuständige Aufsichtsbehörde</h2>
+            <p>Landesärztekammer Hessen</p>
+            <p>Im Vogelsgesang 3</p>
+            <p>60488 Frankfurt am Main</p>
+            <p><a href="https://www.laekh.de" target="_blank" rel="noopener">www.laekh.de</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Zuständige Kassenärztliche Vereinigung</h2>
+            <p>Kassenärztliche Vereinigung Hessen</p>
+            <p>Europa-Allee 90</p>
+            <p>60486 Frankfurt am Main</p>
+            <p><a href="https://www.kvhessen.de" target="_blank" rel="noopener">www.kvhessen.de</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Berufsrechtliche Regelungen</h2>
+            <p>Berufsordnung der Landesärztekammer Hessen</p>
+            <p>Heilberufsgesetz des Landes Hessen</p>
+            <p>Die Regelungen sind über die Website der <a href="https://www.laekh.de" target="_blank" rel="noopener">Landesärztekammer Hessen</a> zugänglich.</p>
+        </div>
+
+        <div class="section">
+            <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+            <p>Nathalena Hein</p>
+            <p>Große Friedberger Str. 44–46, 60313 Frankfurt am Main</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Praxis Lena Hein &nbsp;|&nbsp;
+            <a href="/impressum">Impressum</a>
+            <a href="/datenschutz">Datenschutzerklärung</a>
+        </p>
+    </footer>
+
+</body>
+</html>
