@@ -337,6 +337,13 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .hero-float-card:hover {
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
         }
 
         .float-icon {
@@ -1019,13 +1026,13 @@
                 <div class="hero-image-wrapper">
                     <img src="lena_hero.jpg" alt="Nathalena Hein – Fachärztin für Allgemeine Chirurgie">
                 </div>
-                <div class="hero-float-card">
+                <a href="mailto:info@praxislenahein.de" class="hero-float-card">
                     <div class="float-icon">🩺</div>
                     <div class="float-text">
-                        <strong>Vereinbaren Sie Ihr Erstgespräch</strong>
-                        <span>Individuelle Beratung</span>
+                        <strong>Erstgespräch vereinbaren</strong>
+                        <span>info@praxislenahein.de</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
