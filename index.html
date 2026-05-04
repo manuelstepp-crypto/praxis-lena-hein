@@ -326,40 +326,6 @@
             padding: 2rem;
         }
 
-        .hero-float-card {
-            position: absolute;
-            bottom: 2rem;
-            left: -1.5rem;
-            background: white;
-            border-radius: 16px;
-            padding: 1.2rem 1.5rem;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.06);
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-            cursor: pointer;
-            transition: box-shadow 0.3s, transform 0.3s;
-        }
-        .hero-float-card:hover {
-            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-
-        .float-icon {
-            width: 44px;
-            height: 44px;
-            background: var(--sand);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-        }
-
-        .float-text { font-size: 0.8rem; }
-        .float-text strong { display: block; color: var(--soft-black); font-weight: 600; font-size: 0.9rem; }
-        .float-text span { color: var(--text-light); }
 
         /* ── Section Defaults ── */
         section { padding: 7rem 2rem; }
@@ -960,7 +926,6 @@
             .hero-actions { justify-content: center; }
             .hero-image { order: -1; }
             .hero-image-wrapper { max-width: 300px; margin: 0 auto; }
-            .hero-float-card { left: 50%; transform: translateX(-50%); bottom: -0.5rem; }
 
             .philosophy-grid,
             .about-grid {
@@ -1026,13 +991,6 @@
                 <div class="hero-image-wrapper">
                     <img src="lena_hero.jpg" alt="Nathalena Hein – Fachärztin für Allgemeine Chirurgie">
                 </div>
-                <a href="mailto:info@praxislenahein.de" class="hero-float-card">
-                    <div class="float-icon">🩺</div>
-                    <div class="float-text">
-                        <strong>Erstgespräch vereinbaren</strong>
-                        <span>info@praxislenahein.de</span>
-                    </div>
-                </a>
             </div>
         </div>
     </section>
