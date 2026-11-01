@@ -761,8 +761,16 @@
             font-weight: 500;
         }
 
+        /* Bei ungerader Anzahl: letzte Karte mittig */
+        .team-card:last-child:nth-child(odd) {
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: calc(50% - 1rem);
+        }
+
         @media (max-width: 700px) {
             .team-grid { grid-template-columns: 1fr; }
+            .team-card:last-child:nth-child(odd) { width: 100%; }
         }
 
         /* ── Aktuelles ── */
@@ -1268,23 +1276,6 @@
                 <!-- Teammitglied 2 -->
                 <div class="team-card fade-up">
                     <div class="team-photo">
-                        <img src="team_kateryna.jpg" alt="Kateryna Kulyk">
-                    </div>
-                    <div class="team-info">
-                        <p class="team-title">Ernährungsberaterin</p>
-                        <h3 class="team-name">Kateryna Kulyk</h3>
-                        <p class="team-cv">Kateryna Kulyk unterstützt Patientinnen mit individueller ernährungstherapeutischer Beratung und Behandlung. Ihre Schwerpunkte liegen auf hormonell bedingten Stoffwechselthemen und funktionellen Darmerkrankungen.</p>
-                        <div class="team-tags">
-                            <span class="team-tag">PCOS</span>
-                            <span class="team-tag">Insulinresistenz</span>
-                            <span class="team-tag">Reizdarmsyndrom</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Teammitglied 3 -->
-                <div class="team-card fade-up">
-                    <div class="team-photo">
                         <img src="team_patric.jpg" alt="Patric Alexander Hahn">
                     </div>
                     <div class="team-info">
@@ -1305,7 +1296,7 @@
                     </div>
                 </div>
 
-                <!-- Teammitglied 4 -->
+                <!-- Teammitglied 3 -->
                 <div class="team-card fade-up">
                     <div class="team-photo">
                         <img src="team_mieszko.jpg" alt="Mieszko Domanski">
